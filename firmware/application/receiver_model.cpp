@@ -35,10 +35,11 @@ using namespace portapack;
 
 namespace {
 
-static constexpr std::array<baseband::AMConfig, 3> am_configs { {
+static constexpr std::array<baseband::AMConfig, 4> am_configs { {
 	{ taps_6k0_dsb_channel, AMConfigureMessage::Modulation::DSB },
 	{ taps_2k8_usb_channel, AMConfigureMessage::Modulation::SSB },
-	{ taps_2k8_lsb_channel, AMConfigureMessage::Modulation::SSB },	
+	{ taps_2k8_lsb_channel, AMConfigureMessage::Modulation::SSB },
+	{ taps_700_cw_channel, AMConfigureMessage::Modulation::SSB },
 } };
 
 static constexpr std::array<baseband::NBFMConfig, 3> nbfm_configs { {
